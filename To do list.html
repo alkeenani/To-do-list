@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="To do list.css" />
+    <title>To do list</title>
+  </head>
+  <body>
+    <div class="type">
+      <span>Normal</span>
+      <span>Important</span>
+      <span>Very Important</span>
+    </div>
+    <div class="container">
+      <input
+        type="text"
+        name="inputName"
+        class="input"
+        placeholder="Elements Text"
+      />
+      <input type="text" name="des" class="input" placeholder="Elements Des" />
+      <select name="type" class="input">
+        <option value="noraml">Normal</option>
+        <option value="imortant">Important</option>
+        <option value="very-imortant">Very Important</option>
+      </select>
+      <input type="submit" />
+      <ul class="tasklist"></ul>
+    </div>
+    <script src="To do list.js"></script>
+  </body>
+</html>
