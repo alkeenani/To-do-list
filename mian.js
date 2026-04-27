@@ -60,6 +60,16 @@ let arr = [];
 if (localStorage.getItem("tasks")) {
   arr = JSON.parse(localStorage.getItem("tasks")); //? هات البنات بتاعتي
 }
+window.addEventListener("DOMContentLoaded", () => {
+  const fontsave = window.localStorage.getItem("font");
+  if (window.localStorage.getItem("font")) {
+    document.documentElement.style.setProperty(
+      "--main-font",
+      `'${fontsave}', sans-serif`,
+    );
+  }
+  fontSelcet.value = fontsave;
+});
 gettolocllstorage(); //?  هنا اناش بشتغل الفاشنكن بتاعتي
 toggleDeleteAll();
 removeAllTask();
@@ -271,9 +281,11 @@ function removeAllTask() {
 
 function changeFont() {
   fontSelcet.addEventListener("change", function () {
+    let fontvalue = this.value;
     document.documentElement.style.setProperty(
       "--main-font",
       `'${this.value}', sans-serif`,
     );
+    window.localStorage.setItem("font", fontvalue);
   });
 }
