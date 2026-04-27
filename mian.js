@@ -50,8 +50,8 @@ let delAll = document.querySelector(".del-all");
 let Type = document.querySelector("[name='type']");
 let output = document.getElementsByClassName("tasklist")[0];
 let fontSelcet = document.querySelector("#fontselect");
-changeFont();
 // localStorage.clear();
+changeFont();
 
 //? هنا انا عملت arry عشان اقدر اتحكم في كل العناصر بتاعتي
 let arr = [];
@@ -67,8 +67,8 @@ window.addEventListener("DOMContentLoaded", () => {
       "--main-font",
       `'${fontsave}', sans-serif`,
     );
+    fontSelcet.value = fontsave || fontSelcet.value;
   }
-  fontSelcet.value = fontsave;
 });
 gettolocllstorage(); //?  هنا اناش بشتغل الفاشنكن بتاعتي
 toggleDeleteAll();
