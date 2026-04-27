@@ -3,10 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="To do list.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700&family=Amiri:ital,wght@0,400;0,700;1,400&family=Areiru&family=Cairo:wght@200;400;700;900&family=Changa:wght@200;500;800&family=El+Messiri:wght@400;700&family=Fragment+Mono&family=Inter:wght@100;400;900&family=JetBrains+Mono:wght@100;400;800&family=Kanit:wght@100;400;900&family=Lalezar&family=Lemonada:wght@300;700&family=Lobster&family=Majallat&family=Mada:wght@200;500;900&family=Montserrat:wght@100;400;900&family=Noto+Sans+Arabic:wght@100;400;900&family=Noto+Serif+Arabic:wght@100;400;900&family=Open+Sans:wght@300;400;800&family=Oswald:wght@200;500;700&family=Pacifico&family=Playfair+Display:ital,wght@0,400;0,900;1,400&family=Poppins:wght@100;400;900&family=Raleway:wght@100;400;900&family=Reem+Kufi:wght@400;700&family=Roboto+Mono:wght@100;400;700&family=Roboto:wght@100;400;900&family=Rubik:ital,wght@0,300;0,900;1,300&family=Tajawal:wght@200;500;900&family=Titillium+Web:wght@200;400;700&family=Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/To do list/To do list.css" />
     <title>To do list</title>
   </head>
   <body>
+    <select id="fontselect">
+      <optgroup label="Arabic & English Fonts">
+        <option value="Cairo">Cairo (كاييرو)</option>
+        <option value="Tajawal">Tajawal (تجول)</option>
+        <option value="Almarai">Almarai (المراعي)</option>
+        <option value="Amiri">Amiri (أميري - كلاسيكي)</option>
+        <option value="Noto Sans Arabic">Noto Sans Arabic</option>
+        <option value="Noto Serif Arabic">Noto Serif Arabic</option>
+        <option value="El Messiri">El Messiri (المسيري)</option>
+        <option value="Lemonada">Lemonada (ليمونادة)</option>
+        <option value="Changa">Changa (شانغا)</option>
+        <option value="Reem Kufi">Reem Kufi (ريم كوفي)</option>
+        <option value="Lalezar">Lalezar (لاليزار)</option>
+        <option value="Mada">Mada (مدى)</option>
+        <option value="Rubik">Rubik (روبيك)</option>
+        <option value="Vibes">Vibes (فيبز - ديكور)</option>
+        <option value="Areiru">Areiru</option>
+      </optgroup>
+
+      <optgroup label="English Special Fonts">
+        <option value="Open Sans">Open Sans</option>
+        <option value="Roboto">Roboto</option>
+        <option value="Montserrat">Montserrat</option>
+        <option value="Poppins">Poppins</option>
+        <option value="Inter">Inter</option>
+        <option value="Raleway">Raleway</option>
+        <option value="Oswald">Oswald (ضيق وعريض)</option>
+        <option value="Playfair Display">Playfair Display (سيريف فخم)</option>
+        <option value="Kanit">Kanit</option>
+        <option value="Titillium Web">Titillium Web</option>
+        <option value="Lobster">Lobster (مكتوب باليد)</option>
+        <option value="Pacifico">Pacifico (يدوي ناعم)</option>
+        <option value="JetBrains Mono">JetBrains Mono (خط برمجة)</option>
+        <option value="Roboto Mono">Roboto Mono</option>
+        <option value="Fragment+Mono">Fragment Mono</option>
+      </optgroup>
+    </select>
     <div class="type">
       <span>Normal</span>
       <span>Important</span>
@@ -21,11 +62,12 @@
       />
       <input type="text" name="des" class="input" placeholder="Elements Des" />
       <select name="type" class="input">
-        <option value="noraml">Normal</option>
-        <option value="imortant">Important</option>
-        <option value="very-imortant">Very Important</option>
+        <option value="Normal">Normal</option>
+        <option value="Important">Important</option>
+        <option value="Very Important">Very Important</option>
       </select>
       <input type="submit" />
+      <button class="del-all">Delate All</button>
       <ul class="tasklist"></ul>
     </div>
     <script src="To do list.js"></script>
